@@ -1,0 +1,69 @@
+<!DOCTYPE html>                                 <!--Tipo de documento. Permite la versión de html que se usa-->
+<html lang = "es">                                  <!--Idioma del contenido del documento-->
+    <head>                                                 <!--Información general y título del documento-->
+        <meta charset = "UTF-8">                                       <!--Codificacion de carateres utilizada-->
+        <title>Colegio la Alegria del Saber</title>             <!--Título de la página WEB-->
+            <meta name = "viewport" content = "width= device - width, user-scalable = no, initial-scale = 1.0,
+                maximun-scale =1.0, minimum-scale = 1.0">     <!--Para que se escale cualquier pantalla-->
+            <link rel = "stylesheet" href = "miEstilo/estilos.css">  <!--Sitio donde esta el archivo CSS-->
+            <link href="https://file.myfontastic.com/fHLSwvQe96JgNBKWNnvgQK/icons.css" rel="stylesheet">
+                                                                               <!--Carpeta/enlace donde estan los iconos-->    
+    </head>                                                                    <!--fin del encabezado-->
+    <body>                                                                     <!--Cuerpo de la página-->
+        <header class = "header">                               <!--limitar el contenido de la pagina a lo ancho-->
+            <div class = "contenedor">
+                <h1 class = "logo">Colegio La Alegría del Saber</h1>        <!--Coloca el titulo-->
+                <span class = "icon-menu" id = "btn-menu"></span>          <!--Coloca logo de menu-->
+                <nav class = "nav" id ="nav"> 
+                    <ul class = "menu">                                     <!--Coloca etiquetas de menu para navegar (clases)-->
+                        <li class = "menu__item"><a class = "menu__link" href = "index.html">Inicio</a></li> 
+                        <li class = "menu__item"><a class = "menu__link" href = "estudiante.html">Estudiantes</a></li>
+                        <li class = "menu__item"><a class = "menu__link" href = "acudiente.html">Acudientes</a></li>
+                        <li class = "menu__item"><a class = "menu__link" href = "profesor.html">Profesores</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class = "banner">                      <!--Para el banner-->
+            <img src="img/banner_2.jpg" alt="" class ="banner__img">
+            <div class = "contenedor">
+                <h2 class = "banner__titulo">La alegría de aprender para todos</h2>
+                <p class = "banner__txt">Aquí comienzan los sueños a ser verdad </p>
+            </div>
+        </div> 
+        <!-------etiqueta main para las fotos de abajo----------------------------------> 
+        <main class = "main">
+            <div class = "contenedor"> <!----crear las coloumnas-->
+                <section class = "info__columna">
+                    <article class = "info__columna">
+                        <img src="img/gradoprimero.jpg" alt="" class="info__img"
+                        <h2 class ="info__titulo">Grado 1&2</h2>
+                        <p class ="info__txt">Inicio de tu aprendizaje. Aqui conoceras las letras y los numeros  </p>
+                    </article>
+                    <article class = "info__columna">
+                        <img src="img/gradocuarto.jpg" alt="" class="info__img"
+                        <h2 class ="info__titulo">Grado 3&4</h2>
+                        <p class ="info__txt">Aprende a construir textos y realizar opeaciones aritméticas básicas</p>
+                    </article>
+                    <article class = "info__columna">
+                        <img src="img/gradoquinto.jpg" alt="" class="info__img"
+                        <h2 class ="info__titulo">Grado 5</h2>
+                        <p class ="info__txt">Ahoras puedes volar a tu segundo ciclo de formación</p>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <!-------etiqueta para el pie de pagina (footer)---------------------->
+        <footer class ="footer">
+            <div class ="social">
+                <a href="https://www.twitter.com" class ="icon-twitter"></a>
+                <a href="https://www.facebook.com" class ="icon-facebook"></a>
+                <a href="https://www.gmail.com"class ="icon-gplus"></a>
+                <a href="https://www.vine.com" class ="icon-vine"></a>
+            </div>
+            <p class ="copy">&copy; Colegio La Alegría del Saber 2021- Todos los derechos reservados</p>
+        </footer>
+        <script src="miFuncion/menu.js"></script>          <!--Llama al script boton del menu.js en carpeta miFuncion-->
+        <H6><center><font color = "black">Released 06/10/2021</font></center></H6>
+    </body>
+</html>  <!--fin de la página--> 

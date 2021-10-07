@@ -1,0 +1,73 @@
+<!DOCTYPE html>                   <!--Tipo de documento. Permite la versión de html que se usa-->
+<html lang = "es">                                  <!--Idioma del contenido del documento-->
+    <head>                                          <!--Información general y título del documento-->
+        <meta charset = "UTF-8">                    <!--Codificacion de carateres utilizada-->
+        <title>Estudiante</title>             <!--Título de la página WEB-->
+            <meta name = "viewport" content = "width= device - width, user-scalable = no, initial-scale = 1.0,
+                maximun-scale =1.0, minimum-scale = 1.0">     <!--Para que se escale cualquier pantalla-->
+            <link rel = "stylesheet" href = "miEstilo/estilos.css">  <!--Sitio donde esta el archivo CSS-->
+            <link href="https://file.myfontastic.com/fHLSwvQe96JgNBKWNnvgQK/icons.css" rel="stylesheet">
+                                                                <!--Carpeta/enlace donde estan los iconos-->    
+    </head>                                                     <!--fin del encabezado-->
+    <body>                                                      <!--Cuerpo de la página-->
+        <header class = "header">                               <!--limitar el contenido de la pagina a lo ancho-->
+            <div class = "contenedor" >
+                <h1 class = "logo">Colegio La Alegría del Saber</h1>        <!--Coloca el titulo-->
+                <span class = "icon-menu" id = "btn-menu"></span>                           <!--Coloca logo de menu-->
+                <nav class = "nav" id ="nav"> 
+                    <ul class = "menu">                                     <!--Coloca etiquetas de menu para navegar (clases)-->
+                        <li class = "menu__item"><a class = "menu__link" href = "index.html">Inicio</a></li> 
+                        <li class = "menu__item"><a class = "menu__link" href = "estudiante.html">Estudiantes</a></li>
+                        <li class = "menu__item"><a class = "menu__link" href = "acudiente.html">Acudientes</a></li>
+                        <li class = "menu__item"><a class = "menu__link" href = "profesor.html">Profesores</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class = "banner">                      <!--Para el banner-->
+            <img src="img/banner_2.jpg" alt="" class ="banner__img">
+            <h2 class="ban">Gestión de Estudiantes</h2>
+        </div> 
+
+        <section class="sect">
+            <form action="" method="POST" class="formR">
+                <h4>Registro de Estudiante</h4>
+                <label> Tipo de Documento: </label>
+                <select name="typeid" class="field">
+                    <option value="ti">T.I</option>
+                    <option value="rs">Regitro civil</option>
+                    <option value="pb">Partida bautismo</option></select><br>
+                <label>Documento: </label>
+                <input type="text" class="field" name="id"><br>
+                <label>Nombre: </label>
+                <input type="text" class="field" name="name"><br>
+                <label>Apellido: </label>
+                <input type="text" class="field" name="lastname"><br>
+                <label>Dirección: </label>
+                <input type="text" class="field" name="address"><br>
+                <label>Teléfono: </label>
+                <input type="text" class="field" name="phone">
+
+                <p>
+                    <button id="btnNuevo" name="btnNuevo" type="reset">Nuevo</button>
+                    <button id="btnBuscar" name="btnBuscar">Buscar</button>
+                    <button id="btnGuardar" name="btnGuardar" type="submit">Guardar</button>
+                    <button id="btnModificar" name="btnModificar">Modificar</button>
+                    <button id="btnActualizar" name="btnActualizar">Actualizar</button>
+                    <button id="btnImprimir" name="btnImprimir">Imprimir</button>
+                </p>
+            </form>
+        </section>
+
+        <footer class ="footer">
+            <div class ="social">
+                <a href="https://www.twitter.com" class ="icon-twitter"></a>
+                <a href="https://www.facebook.com" class ="icon-facebook"></a>
+                <a href="https://www.gmail.com"class ="icon-gplus"></a>
+                <a href="https://www.vine.com" class ="icon-vine"></a>
+            </div>
+            <p class ="copy">&copy; Colegio La Alegría del Saber 2021- Todos los derechos reservados</p>
+        </footer>
+        <script src="miFuncion/menu.js"></script>         
+    </body>
+</html>  
